@@ -31,14 +31,14 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.brown[400],
           elevation: 0.0,
           actions: <Widget>[
-            FlatButton.icon(
+            TextButton.icon(
               icon: Icon(Icons.person),
               label: Text('logout'),
               onPressed: () async {
                 await _auth.signOut();
               },
             ),
-            FlatButton.icon(
+            TextButton.icon(
               icon: Icon(Icons.settings),
               label: Text('settings'),
               onPressed: () => _showSettingsPanel(),
